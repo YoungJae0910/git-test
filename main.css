@@ -20,7 +20,7 @@ body{
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
-    /* perspective: 카드를 조금더 부드럽게 넘겨주는효과 낮을수록 좀더 임팩트있게넘어가는거같음 */
+    /* perspective: 카드를 조금더 입체적이게 뒤집어주는효과 */
     perspective: 1000px;
 }
 
@@ -105,7 +105,7 @@ body{
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
-}
+} 
 
 .card__body{
     padding: 30px;
