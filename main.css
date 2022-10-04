@@ -5,6 +5,7 @@
     --dark: #212121;
     --light: #f3f3f3;
     --green: #4caf50;
+    --blue: #1a237e;
 }
 
 *{
@@ -12,10 +13,27 @@
     padding: 0;
 }
 
+.slide-controls{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 body{
     font-family: montserrat, sans-serif;
     width: 100%;
     min-height: 100vh;
+}
+
+.cardall{
+    display: flex;
 }
 
 .card{
@@ -229,6 +247,438 @@ body{
 }
 
 .card__body_1 p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card_2{
+    margin: 100px auto 0;
+    width: 400px;
+    height: 600px;
+    /* perspective: 카드를 조금더 입체적이게 뒤집어주는효과 */
+    perspective: 1000px;
+}
+
+.card__inner_2{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card__inner_2.is-flipped2{
+    transform: rotateY(180deg);
+}
+
+.card__face_2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front_2{
+    background-image: linear-gradient(to bottom right, var(--primary), var(--dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__face--front_2 h2{
+    color: #fff;
+    font-size: 32px;
+}
+
+.card__face--back_2{
+    background-color: var(--light);
+    transform: rotateY(180deg);
+}
+
+.card__content_2{
+    width: 100%;
+    height: 100%;
+}
+
+.card__header_2{
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card__header_2:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--dark) 115%);
+}
+
+.pp2{
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.card__header_2 h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+} 
+
+.card__body_2{
+    padding: 30px;
+}
+
+.card__body_2 h3{
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card__body_2 p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card_3{
+    margin: 100px auto 0;
+    width: 400px;
+    height: 600px;
+    /* perspective: 카드를 조금더 입체적이게 뒤집어주는효과 */
+    perspective: 1000px;
+}
+
+.card__inner_3{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card__inner_3.is-flipped3{
+    transform: rotateY(180deg);
+}
+
+.card__face_3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front_3{
+    background-image: linear-gradient(to bottom right, var(--primary), var(--blue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__face--front_3 h2{
+    color: #fff;
+    font-size: 32px;
+}
+
+.card__face--back_3{
+    background-color: var(--light);
+    transform: rotateY(180deg);
+}
+
+.card__content_3{
+    width: 100%;
+    height: 100%;
+}
+
+.card__header_3{
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card__header_3:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--blue) 115%);
+}
+
+.pp3{
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.card__header_3 h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+} 
+
+.card__body_3{
+    padding: 30px;
+}
+
+.card__body_3 h3{
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card__body_3 p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* copy */
+.card_copy{
+    margin: 100px auto 0;
+    width: 400px;
+    height: 600px;
+    /* perspective: 카드를 조금더 입체적이게 뒤집어주는효과 */
+    perspective: 1000px;
+}
+
+.card__inner_copy{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card__inner_copy.is-flippedcopy{
+    transform: rotateY(180deg);
+}
+
+.card__face_copy{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front_copy{
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__face--front_copy h2{
+    color: #fff;
+    font-size: 32px;
+}
+
+.card__face--back_copy{
+    background-color: var(--light);
+    transform: rotateY(180deg);
+}
+
+.card__content_copy{
+    width: 100%;
+    height: 100%;
+}
+
+.card__header_copy{
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card__header_copy:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+}
+
+.pp_copy{
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.card__header_copy h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+} 
+
+.card__body_copy{
+    padding: 30px;
+}
+
+.card__body_copy h3{
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card__body_copy p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.card_3_copy{
+    margin: 100px auto 0;
+    width: 400px;
+    height: 600px;
+    /* perspective: 카드를 조금더 입체적이게 뒤집어주는효과 */
+    perspective: 1000px;
+}
+
+.card__inner_3_copy{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card__inner_3_copy.is-flipped3_copy{
+    transform: rotateY(180deg);
+}
+
+.card__face_3_copy{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front_3_copy{
+    background-image: linear-gradient(to bottom right, var(--primary), var(--blue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__face--front_3_copy h2{
+    color: #fff;
+    font-size: 32px;
+}
+
+.card__face--back_3_copy{
+    background-color: var(--light);
+    transform: rotateY(180deg);
+}
+
+.card__content_3_copy{
+    width: 100%;
+    height: 100%;
+}
+
+.card__header_3_copy{
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card__header_3_copy:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--blue) 115%);
+}
+
+.pp3_copy{
+    display: block;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.card__header_3_copy h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+} 
+
+.card__body_3_copy{
+    padding: 30px;
+}
+
+.card__body_3_copy h3{
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card__body_3_copy p {
     color: var(--dark);
     font-size: 18px;
     line-height: 1.5;
