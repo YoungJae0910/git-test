@@ -32,11 +32,18 @@ body{
     min-height: 100vh;
 }
 
-.cardall{
+.container{
+    width: 60%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides{
     display: flex;
 }
 
-.card{
+.slide{
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
@@ -144,13 +151,13 @@ body{
     line-height: 1.5;
 }
 
-.card_1{
+/* .card_1{
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
-    /* perspective: 카드를 조금더 입체적이게 뒤집어주는효과 */
+    perspective: 카드를 조금더 입체적이게 뒤집어주는효과
     perspective: 1000px;
-}
+} */
 
 .card__inner_1{
     width: 100%;
@@ -252,13 +259,13 @@ body{
     line-height: 1.5;
 }
 
-.card_2{
+/* .card_2{
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
-    /* perspective: 카드를 조금더 입체적이게 뒤집어주는효과 */
+    perspective: 카드를 조금더 입체적이게 뒤집어주는효과
     perspective: 1000px;
-}
+} */
 
 .card__inner_2{
     width: 100%;
@@ -360,13 +367,13 @@ body{
     line-height: 1.5;
 }
 
-.card_3{
+/* .card_3{
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
-    /* perspective: 카드를 조금더 입체적이게 뒤집어주는효과 */
+    perspective: 카드를 조금더 입체적이게 뒤집어주는효과
     perspective: 1000px;
-}
+} */
 
 .card__inner_3{
     width: 100%;
@@ -468,13 +475,13 @@ body{
     line-height: 1.5;
 }
 /* copy */
-.card_copy{
+/* .card_copy{
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
-    /* perspective: 카드를 조금더 입체적이게 뒤집어주는효과 */
+    perspective: 카드를 조금더 입체적이게 뒤집어주는효과
     perspective: 1000px;
-}
+} */
 
 .card__inner_copy{
     width: 100%;
@@ -576,13 +583,13 @@ body{
     line-height: 1.5;
 }
 
-.card_3_copy{
+/* .card_3_copy{
     margin: 100px auto 0;
     width: 400px;
     height: 600px;
-    /* perspective: 카드를 조금더 입체적이게 뒤집어주는효과 */
+    perspective: 카드를 조금더 입체적이게 뒤집어주는효과
     perspective: 1000px;
-}
+} */
 
 .card__inner_3_copy{
     width: 100%;
